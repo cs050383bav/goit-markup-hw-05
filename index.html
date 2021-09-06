@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
+        <!-- header -->
         <header class="header">
             <div class="container header-container">
                 <!-- section-nav -->
@@ -31,13 +32,18 @@
                     >
                     <ul class="header-list list">
                         <li class="header-item">
-                            <a class="header-link link" href="./index.html">Студия</a>
+                            <a
+                                class="header-link link marker-index"
+                                href="./index.html"
+                                >Студия</a
+                            >
                         </li>
                         <li class="header-item">
                             <a class="header-link link" href="./portfolio.html"
                                 >Портфолио</a
                             >
                         </li>
+
                         <li class="header-item">
                             <a class="header-link link" href="">Контакты</a>
                         </li>
@@ -57,6 +63,7 @@
                             <div class="link-text">info@devstudio.com</div>
                         </a>
                     </li>
+
                     <li class="contact-list">
                         <a class="header-phone link" href="tel:+380961111111">
                             <svg class="header-icon">
@@ -77,7 +84,9 @@
                     <h1 class="hero-title">
                         Эффективные решения<br />для вашего бизнеса
                     </h1>
-                    <button class="hero-button">Заказать услугу</button>
+                    <button class="hero-button" data-modal-open>
+                        Заказать услугу
+                    </button>
                 </section>
             </div>
             <!-- advantage-->
@@ -159,6 +168,7 @@
                                 alt="набор кода на клавиатуре"
                                 width="370"
                             />
+                            <div class="do-offer">Десктопные приложения</div>
                         </li>
                         <li class="do-item">
                             <img
@@ -166,6 +176,7 @@
                                 alt="Подбор шаблона для смартфона"
                                 width="370"
                             />
+                            <div class="do-offer">Мобильные приложения</div>
                         </li>
                         <li class="do-item">
                             <img
@@ -173,6 +184,7 @@
                                 alt="Выбор цвета"
                                 width="370"
                             />
+                            <div class="do-offer">Дизайнерские решения</div>
                         </li>
                     </ul>
                 </div>
@@ -523,5 +535,16 @@
                 </div>
             </div>
         </footer>
+        <!-- modalka -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="modal-close" data-modal-close>
+                    <svg class="modal-img">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
