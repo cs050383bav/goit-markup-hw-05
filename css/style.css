@@ -250,7 +250,7 @@ img {
 .hero-button:focus,
 .hero-button:hover {
     color: var(--accent-text-color);
-    background-color: #ffffff;
+    background-color: #188ce8f;
 }
 
 /*-------------------advantage-----------------*/
