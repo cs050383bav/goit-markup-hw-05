@@ -249,7 +249,8 @@ img {
 
 .hero-button:focus,
 .hero-button:hover {
-    background-color: #188ce8f;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*-------------------advantage-----------------*/
